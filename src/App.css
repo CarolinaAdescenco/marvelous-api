@@ -29,6 +29,12 @@ body {
   border-radius: 0;
   background-clip: unset; }
 
-span{
+span, p{
   color: #fafafa;
+}
+
+p{
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
 }

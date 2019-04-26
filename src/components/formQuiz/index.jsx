@@ -1,14 +1,18 @@
 import React from 'react';
 import BtnQuiz from '../btnQuiz';
+import InputQuiz from '../inputQuiz';
 
 export default function FormQuiz(props){
+
+    let style = `${props.styleForm}`
+
     return(
-        <form>
-            <div className="form-group mb-0">
-            <label for="marvelCharacter">Whats is the name of this Marvel Character?</label>
-            <input type="text" className="form-control" id="marvelCharacter" aria-describedby="marvelCharacter" placeholder="Write here" />
-            </div>
-            <BtnQuiz>Answer</BtnQuiz> 
-        </form>
+
+        <div className={style}>
+            <form>
+                <InputQuiz idInput="marvelCharacter" label="Whats is the name of this Marvel Character?" placeholder="Write here" />
+                <BtnQuiz textButton="Answer" /> 
+            </form>
+        </div>
     )
 } 
